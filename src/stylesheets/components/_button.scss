@@ -1,0 +1,14 @@
+.button {
+  padding: $gap-xs $gap;
+  color: $white;
+  background-color: $blue;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+}

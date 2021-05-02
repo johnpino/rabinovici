@@ -1,0 +1,32 @@
+.hero {
+  background-color: $black;
+  padding-left: $gap;
+  padding-right: $gap;
+  position: relative;
+
+  &__container {
+    @media only screen and (min-width: $media-query-medium) {
+      max-width: $content-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__image {
+    display: flex;
+    margin-right: -$gap;
+    margin-left: -$gap;
+  }
+
+  &__title {
+    color: $blue;
+  }
+
+  &__subtitle {
+    color: $white;
+  }
+
+  &__description {
+    color: $white;
+  }
+}

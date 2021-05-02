@@ -1,0 +1,7 @@
+//Visibility
+
+.hide-for-small {
+  @media only screen and (max-width: $media-query-small) {
+    display: none !important;
+  }
+}

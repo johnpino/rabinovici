@@ -1,0 +1,40 @@
+//Forms
+
+.form {
+  &__item {
+    position: relative;
+    margin-bottom: $gap;
+
+    input {
+      &:focus + label,
+      &:not(:placeholder-shown) + label {
+        top: 0;
+        transform: translateY(-50%);
+        background-color: white;
+        padding-left: $gap-xs;
+        padding-right: $gap-xs;
+        margin-left: $gap-xs;
+        font-size: $label-hover-font-size;
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-left: $gap;
+      transform: translateY(-50%);
+      transition: 0.3s;
+    }
+
+    &--checkbox {
+      padding-left: $gap;
+      font-size: $label-font-size;
+
+      input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

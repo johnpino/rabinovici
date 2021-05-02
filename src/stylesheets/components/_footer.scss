@@ -1,0 +1,59 @@
+//Footer
+
+.footer {
+  padding-right: $gap;
+  padding-left: $gap;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  font-size: $footer-font-size;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    height: $footer-decoration-height;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(3deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  a {
+    color: $white;
+  }
+
+  &__logo {
+    max-width: $logo-max-width;
+  }
+
+  &__links {
+    a {
+      text-decoration: none;
+      padding-left: $gap-xs;
+      padding-right: $gap-xs;
+
+      &:not(:last-child) {
+        border-right: 1px solid $white;
+      }
+    }
+  }
+
+  &__icons {
+    * {
+      padding-left: $gap-xs;
+      padding-right: $gap-xs;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: block;
+    font-size: $p-font-size;
+    margin-right: -$gap;
+    margin-left: -$gap;
+  }
+}

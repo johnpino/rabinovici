@@ -1,1 +1,26 @@
-// Add your styles here
+// Load CSS Reset from NPM
+@import "~normalize.css";
+
+//Global
+@import "global/vars";
+@import "global/global";
+@import "global/typography";
+
+//Helpers
+@import "helpers/visibility";
+@import "helpers/spaces";
+@import "helpers/alignment";
+@import "helpers/display";
+@import "helpers/background";
+
+//Layout
+@import "layout/section";
+@import "layout/column";
+
+//Components
+@import "components/hero";
+@import "components/button";
+@import "components/header";
+@import "components/form";
+@import "components/card";
+@import "components/footer";

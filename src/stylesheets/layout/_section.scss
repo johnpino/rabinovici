@@ -1,0 +1,32 @@
+//Container
+
+.section {
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: $media-query-medium) {
+      max-width: $content-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &--decoration {
+    &::after {
+      content: '';
+      display: block;
+      height: 95px;
+      width: 100%;
+      background-image: url("/images/arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(100%);
+      z-index: 1;
+    }
+  }
+}

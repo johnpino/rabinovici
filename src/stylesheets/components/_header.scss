@@ -1,0 +1,21 @@
+.header {
+  padding: $gap;
+
+  &__container {
+    @media only screen and (min-width: $media-query-medium) {
+      max-width: $content-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__logo {
+    max-width: $logo-max-width;
+  }
+
+  @media only screen and (min-width: 601px) {
+    max-width: $content-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

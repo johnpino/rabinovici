@@ -1,0 +1,20 @@
+//Global styling
+
+img {
+  max-width: 100%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  min-height: $input-height;
+  box-sizing: border-box;
+  padding-left: $gap;
+  padding-right: $gap;
+  border: 1px solid $gray;
+}
+
+label {
+  font-size: $label-font-size;
+}

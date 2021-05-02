@@ -1,0 +1,13 @@
+//Cards
+
+.card {
+  &__item {
+    margin-bottom: $gap-md;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}
