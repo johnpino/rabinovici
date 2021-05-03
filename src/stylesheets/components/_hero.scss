@@ -6,7 +6,7 @@
   grid-template-rows: auto;
   align-items: center;
   padding-bottom: $gap;
-  box-shadow: 0 11px 18px -4px rgba(0,0,0,0.34);
+  box-shadow: 0 11px 18px -4px rgba(0, 0, 0, 0.34);
 
   @include media-medium-up {
     grid-template-columns: auto $content-max-width auto;
