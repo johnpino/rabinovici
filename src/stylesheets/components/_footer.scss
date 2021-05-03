@@ -43,6 +43,13 @@
   }
 
   &__icons {
+    margin-bottom: $gap;
+
+    @media only screen and (min-width: $media-query-small) {
+      margin-bottom: 0;
+      padding-bottom: $gap;
+    }
+
     * {
       padding-left: $gap-xs;
       padding-right: $gap-xs;

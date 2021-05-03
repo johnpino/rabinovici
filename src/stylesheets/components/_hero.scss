@@ -44,10 +44,6 @@
 
   &__title {
     color: $blue;
-
-    @include media-medium-up {
-      margin-top: 0;
-    }
   }
 
   &__subtitle {
