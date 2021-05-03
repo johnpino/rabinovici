@@ -3,6 +3,7 @@
 
 //Global
 @import "global/vars";
+@import "global/mixins";
 @import "global/global";
 @import "global/typography";
 
@@ -15,7 +16,6 @@
 
 //Layout
 @import "layout/section";
-@import "layout/column";
 
 //Components
 @import "components/hero";

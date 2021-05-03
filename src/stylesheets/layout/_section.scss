@@ -4,13 +4,22 @@
   position: relative;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: $gap;
+    margin-right: $gap;
 
-    @media only screen and (min-width: $media-query-medium) {
+    @media only screen and (min-width: $media-query-small) {
       max-width: $content-max-width;
-      margin-right: auto;
       margin-left: auto;
+      margin-right: auto;
+      grid-column-gap: $gap;
+    }
+
+    &.two-columns {
+      @media only screen and (min-width: $media-query-small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 

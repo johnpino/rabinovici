@@ -9,16 +9,16 @@
 <body>
   <main>
     <header class="header">
-      <div class="header__container">
-        <img class="header__logo" src="images/logo-horizontal-black.svg" alt="Logo Horizontal">
-      </div>
+      <img class="header__logo" src="images/logo-horizontal-black.svg" alt="Logo Horizontal">
     </header>
     <section class="hero">
-      <div class="hero__container">
-        <div class="hero__image">
-          <div><img src="images/device.png" alt=""></div>
-          <div><img src="images/person.png" alt=""></div>
-        </div>
+      <div class="hero__image">
+        <div><img class="hide-for-medium-up" src="images/device.png" alt=""></div>
+        <div><img class="hide-for-medium-up" src="images/person.png" alt=""></div>
+        <div><img class="hide-for-small" src="images/device-large.png" alt=""></div>
+        <div><img class="hide-for-small" src="images/person-large.png" alt=""></div>
+      </div>
+      <div class="hero__info">
         <h1 class="hero__title">Harness the Power of Industrial Automation</h1>
         <h2 class="hero__subtitle">Elevate quality and drive production performance</h2>
         <p class="hero__description">When demands never slow, how do manufacturers, warehouse, and logistics providers
@@ -26,12 +26,12 @@
           simple track and trace to complex quality inspection checks with Zebra's Fixed Industrial Scanning and Machine
           Vision solutions.</p>
         <a class="button hide-for-small" href="#">Download the White Paper</a>
-        <a class="button margin-bottom" href="#">Watch the Video </a>
+        <a class="button" href="#">Watch the Video </a>
       </div>
     </section>
-    <section class="section section--decoration margin-bottom-md">
-      <div class="section__container">
-        <div class="column column--half">
+    <section class="section section--decoration margin-bottom-md padding-top-md">
+      <div class="section__container two-columns">
+        <div>
           <h2 class="h1-style">Lorem ipsum dolor sit amet</h2>
           <h3 class="h2-style">Lorem ipsum dolor sit amet</h3>
           <p>Lorem ipsum dolor sit amet, at qui splendide vitupe ratoribus. Duo vide wisi legimus cu, Lorem ipsum dolor
@@ -39,7 +39,7 @@
             eratoribus. Duo legimus ipsum dolor sit.</p>
           <img class="hide-for-small" src="images/paper.jpg" alt="Download the White Paper">
         </div>
-        <div class="column column--half">
+        <div>
           <form action="" class="form margin-bottom-md">
             <div class="form__item">
               <input type="text" id="firstName" name="firstName" placeholder=" " required="true">
@@ -81,20 +81,21 @@
             </div>
             <button type="submit" class="button">Download the White Paper</button>
           </form>
-          <img class="block align-block-center margin-bottom-md" src="images/paper.jpg" alt="Download the White Paper">
+          <img class="block align-block-center margin-bottom-md hide-for-medium-up" src="images/paper.jpg" alt="Download the White Paper">
         </div>
       </div>
     </section>
-    <section class="section bg-gray-soft padding-top-md">
-      <div class="column">
-        <h2>Enabling Performance. Inspiring Potential.</h2>
+    <section class="section bg-gray-soft padding-top-md padding-bottom-md">
+      <div class="section__container">
+        <h2 class="h1-style align-text-center margin-bottom-md margin-top-md">Enabling Performance. Inspiring Potential.</h2>
         <div class="card">
           <div class="card__item">
             <div class="card__image">
               <img src="images/cardthumblarge01.jpg" alt="">
             </div>
             <h3 class="card__title">Drive Efficiencies Through Automation</h3>
-            <p>Improve efficiency and quality control on your production lines and optimize product throughput throughout your supply chain with a flexible portfolio of scanning or smart camera solutions. </p>
+            <p>Improve efficiency and quality control on your production lines and optimize product throughput
+              throughout your supply chain with a flexible portfolio of scanning or smart camera solutions. </p>
             <a class="button" href="">Discover How</a>
           </div>
           <div class="card__item">
@@ -102,7 +103,8 @@
               <img src="images/cardthumblarge02.jpg" alt="">
             </div>
             <h3 class="card__title">Enhance Visibility and Traceability</h3>
-            <p>Quickly track and trace products and parts through automated processes as they move throughout your supply chain.</p>
+            <p>Quickly track and trace products and parts through automated processes as they move throughout your
+              supply chain.</p>
             <a class="button" href="">Discover How</a>
           </div>
           <div class="card__item">
@@ -110,7 +112,8 @@
               <img src="images/cardthumblarge03.jpg" alt="">
             </div>
             <h3 class="card__title">Simplify and Streamline Inspections</h3>
-            <p>Capture production defects and assembly errors before they progress down the line—improving quality and saving time.</p>
+            <p>Capture production defects and assembly errors before they progress down the line—improving quality and
+              saving time.</p>
             <a class="button" href="">Discover How</a>
           </div>
         </div>
@@ -130,7 +133,7 @@
         <a href=""><i class="fab fa-twitter fa-2x"></i></a>
         <a href=""><i class="fab fa-instagram fa-2x"></i></a>
       </div>
-      <a class="footer__button button" href="#">Download our Whitepaper</a>
+      <a class="footer__button button hide-for-medium-up" href="#">Download our Whitepaper</a>
     </footer>
   </main>
 </body>
