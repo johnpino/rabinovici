@@ -1,7 +1,23 @@
 //Mixins
 
-@mixin media-medium-up() {
-  @media only screen and (min-width: $media-query-medium) {
-    @content;
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $media-query-desktop) { @content ; }
+  }
+
+  @if $point == laptop {
+    @media (min-width: $media-query-laptop) { @content ; }
+  }
+
+  @else if $point == tablet {
+    @media (min-width: $media-query-tablet) { @content ; }
+  }
+
+  @else if $point == phablet {
+    @media (min-width: $media-query-phablet) { @content ; }
+  }
+
+  @else if $point == mobile {
+    @media (max-width: $media-query-mobile) { @content ; }
   }
 }

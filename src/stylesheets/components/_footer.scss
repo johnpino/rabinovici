@@ -45,7 +45,7 @@
   &__icons {
     margin-bottom: $gap;
 
-    @media only screen and (min-width: $media-query-small) {
+    @include breakpoint(tablet) {
       margin-bottom: 0;
       padding-bottom: $gap;
     }

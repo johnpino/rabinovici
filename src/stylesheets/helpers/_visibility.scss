@@ -1,13 +1,35 @@
 //Visibility
 
-.hide-for-small {
-  @media only screen and (max-width: $media-query-small) {
+.hide-for-mobile {
+  @include breakpoint(mobile) {
     display: none !important;
   }
 }
 
-.hide-for-medium-up {
-  @media only screen and (min-width: $media-query-medium) {
+.show-for-mobile {
+  display: block;
+
+  @include breakpoint(phablet) {
+    display: none !important;
+  }
+}
+
+.hide-for-tablet-up {
+  @include breakpoint(tablet) {
+    display: none !important;
+  }
+}
+
+.show-for-tablet-up {
+  display: none;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
+}
+
+.hide-for-desktop-up {
+  @include breakpoint(desktop) {
     display: none !important;
   }
 }

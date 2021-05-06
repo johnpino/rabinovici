@@ -10,8 +10,11 @@ $gray-soft: #f2f2f2;
 
 //Breakpoints
 
-$media-query-small: 640px;
-$media-query-medium: 1024px;
+$media-query-mobile: 37.5em;
+$media-query-phablet: 37.5em;
+$media-query-tablet: 50em;
+$media-query-laptop: 64em;
+$media-query-desktop: 70em;
 
 //Gaps
 

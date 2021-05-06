@@ -11,8 +11,8 @@
     max-width: $logo-max-width;
   }
 
-  @include media-medium-up {
-    grid-template-columns: auto $content-max-width auto;
+  @include breakpoint(desktop) {
+    grid-template-columns: auto minmax(0, $content-max-width) auto;
     grid-template-rows: 1fr;
   }
 }
